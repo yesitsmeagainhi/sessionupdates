@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { logout } from '@/src/services/authService';
+import { logout } from '@/services/authService';
 import { useRouter } from 'next/navigation';
 
 export default function LogoutButton() {
