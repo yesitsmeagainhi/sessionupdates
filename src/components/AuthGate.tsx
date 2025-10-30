@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { observeAuth } from '@/src/services/authService';
+import { observeAuth } from '@/services/authService';
 import { useRouter } from 'next/navigation';
 
 export default function AuthGate({ children }: { children: React.ReactNode }) {
