@@ -11,8 +11,13 @@ const PALETTE = {
   blue: '#004e92',
   green: '#16a34a',
 };
-
-const MenuLinkCard = ({ href, icon, title, subtitle }) => (
+type MenuLinkCardProps = {
+  href: string;
+  icon: React.ReactNode; // Use React.ReactNode to allow SVGs or other components
+  title: string;
+  subtitle: string;
+};
+const MenuLinkCard = ({ href, icon, title, subtitle }: MenuLinkCardProps) => (
   <Link href={href} style={{ textDecoration: 'none' }}>
     <div style={{
       background: PALETTE.surface,
