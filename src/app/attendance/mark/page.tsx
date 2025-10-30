@@ -24,10 +24,13 @@ const PALETTE = {
   blue: '#004e92',
   red: '#be123c',
 };
-
+type StatusDisplayProps = {
+  text: string;
+  isError?: boolean; // It's optional because it has a default value
+};
 // Define a loading/status component
-function StatusDisplay({ text, isError = false }) {
-  return (
+function StatusDisplay({ text, isError = false }: StatusDisplayProps) {
+    return (
     <div style={{
       display: 'grid',
       placeContent: 'center',
