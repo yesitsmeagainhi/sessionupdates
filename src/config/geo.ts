@@ -3,7 +3,7 @@
 import { LatLng } from '@/utils/geo'; // We will create this util file next
 
 // Updated radius to 10km (10,000 meters) as requested
-export const GEOFENCE_RADIUS_M = 10000;
+export const GEOFENCE_RADIUS_M = 1000000;
 
 export const BRANCH_LOCATIONS: Record<string, { name: string; center: LatLng }> = {
   // Use the exact key that is stored in the student's 'branch' field
